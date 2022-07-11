@@ -33,6 +33,11 @@
             { " ", "/" }
         };
 
+        /// <summary>
+        /// Encodes a string of characters into PB&J code.
+        /// </summary>
+        /// <param name="input">The string to encode.</param>
+        /// <returns>A string of PB&J code.</returns>
         public static string Encode(string input)
         {
             StringBuilder convertedCharacters = new StringBuilder();
@@ -47,6 +52,11 @@
             return convertedCharacters.ToString();
         }
 
+        /// <summary>
+        /// Decodes a string of PB&J code into its original form.
+        /// </summary>
+        /// <param name="input">A string of a PB&J code.</param>
+        /// <returns>The original string of the given PB&J code.</returns>
         public static string Decode(string input)
         {
             StringBuilder convertedCharacters = new StringBuilder();
